@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// const ocjui = require("@ocj/common-components");
+import elementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
-import { Button } from "@ocj/common-components";
+import _ from "commonjs";
 
-window.console.log(Button);
+window.console.log(_)
 
-Vue.use(Button)
+Vue.use(elementUI)
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  components: {App}
 }).$mount('#app')

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <ocjButton />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,7 +10,12 @@ import HelloWorld from './components/HelloWorld.vue';
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+  },
+  data() {
+    return {
+      val: []
+    }
   }
 }
 </script>
